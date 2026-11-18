@@ -13,7 +13,7 @@ export default function Shell({ children }) {
           <a href="/#contact">Contact</a>
         </nav>
       </header>
-      <main className="post-wrap">{children}</main>
+      <main className="blog-wrap">{children}</main>
       <footer>
         <span>© {new Date().getFullYear()} {SITE.name}, {SITE.city}</span>
         <span>{SITE.phone} · {SITE.email}</span>
