@@ -11,6 +11,7 @@ export default function Home() {
         <nav>
           <a href="#products">Products</a>
           <a href="#about">About</a>
+          <a href="/blog/">Blog</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
