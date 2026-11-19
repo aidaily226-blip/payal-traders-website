@@ -15,6 +15,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
+      <head>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gaId}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${SITE.gaId}');`,
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

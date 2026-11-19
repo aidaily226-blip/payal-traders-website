@@ -10,9 +10,9 @@ export default function Home() {
         <a href="#top" className="logo">Payal Traders</a>
         <nav>
           <a href="#products">Products</a>
-          <a href="#about">About</a>
+          <a href="/about/">About</a>
           <a href="/blog/">Blog</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact/">Contact</a>
         </nav>
       </header>
 
@@ -80,6 +80,7 @@ export default function Home() {
       <footer>
         <span>© {new Date().getFullYear()} {SITE.name}, {SITE.city}</span>
         <span>{SITE.phone} · {SITE.email}</span>
+        <span><a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/privacy-policy/">Privacy Policy</a></span>
       </footer>
     </>
   );
